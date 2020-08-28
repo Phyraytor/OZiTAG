@@ -1,0 +1,45 @@
+.open {
+  animation-name: opensubmenu;
+  animation-duration: 0.3s;
+  animation-iteration-count: 1; 
+  animation-fill-mode: both;
+}
+.close {
+  animation-name: closesubmenu;
+  animation-duration: 0.3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+.showmenu {
+  display: flex;
+  animation-name: openmenu;
+  animation-duration: 0.4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;	
+}
+
+@keyframes opensubmenu {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes closesubmenu {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes openmenu {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}}
